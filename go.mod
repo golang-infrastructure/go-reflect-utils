@@ -1,4 +1,4 @@
-module github.com/CC11001100/go-reflect-util
+module github.com/CC11001100/go-reflect_utils
 
 go 1.19
 

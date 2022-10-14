@@ -1,4 +1,4 @@
-package reflect_util
+package reflect_utils
 
 import (
 	"github.com/CC11001100/go-reflect-util/test"

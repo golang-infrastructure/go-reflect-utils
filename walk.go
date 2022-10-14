@@ -1,4 +1,4 @@
-package reflect_util
+package reflect_utils
 
 //func Walk(v any, visitor func(key, value reflect.Value) bool) {
 //	reflectValue := reflect.ValueOf(v)

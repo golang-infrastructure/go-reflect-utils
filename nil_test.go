@@ -1,5 +1,2 @@
-package reflect_util
+package reflect_utils
 
-func f() {
-
-}

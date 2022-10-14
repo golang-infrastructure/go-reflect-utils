@@ -1,4 +1,4 @@
-package reflect_util
+package reflect_utils
 
 func Indirect() bool {
 	return false
