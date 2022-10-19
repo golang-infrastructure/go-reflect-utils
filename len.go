@@ -6,7 +6,7 @@ import (
 
 // LenType 安全的计算Type的长度，如果类型不合适会返回0而不是panic
 func LenType(t reflect.Type) int {
-	if t.Kind() != reflect.Array {
+	if t.Kind() != reflect.Array  {
 		return 0
 	}
 	return t.Len()
