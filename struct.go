@@ -1,4 +1,10 @@
 package reflect_utils
+
+import (
+	"reflect"
+	"unsafe"
+)
+
 //
 //import (
 //	"fmt"
@@ -58,5 +64,22 @@ package reflect_utils
 
 // ParseTag 解析字段上的TAG
 func ParseTag() {
+
+}
+
+// ------------------------------------------------- ------------------------------------------------------------------------
+
+func StructToBytes(structObject *any) []byte {
+	s := unsafe.Pointer(structObject)
+	sizeOfMyStruct := int(unsafe.Sizeof(structObject))
+
+	var x reflect.SliceHeader
+	x.Len = sizeOfMyStruct
+	x.Cap = sizeOfMyStruct
+	x.Data = uintptr(s)
+	return *(*[]byte)(unsafe.Pointer(&x))
+}
+
+func BytesToStruct() {
 
 }
