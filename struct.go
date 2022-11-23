@@ -1,10 +1,5 @@
 package reflect_utils
 
-import (
-	"reflect"
-	"unsafe"
-)
-
 //
 //import (
 //	"fmt"
@@ -13,7 +8,7 @@ import (
 //)
 //
 //// GetStructPtrUnExportedField 获取struct上给定字段的值
-//func GetStructPtrUnExportedField(source any, fieldName string) reflect.Value {
+//func GetStructPtrUnExportedField(source any, fieldName string) reflect.ItemValue {
 //	v := reflect.ValueOf(source).Elem().FieldByName(fieldName)
 //	if !v.IsValid() {
 //		return v
@@ -62,24 +57,19 @@ import (
 //
 //}
 
-// ParseTag 解析字段上的TAG
-func ParseTag() {
-
-}
-
 // ------------------------------------------------- ------------------------------------------------------------------------
 
-func StructToBytes(structObject *any) []byte {
-	s := unsafe.Pointer(structObject)
-	sizeOfMyStruct := int(unsafe.Sizeof(structObject))
-
-	var x reflect.SliceHeader
-	x.Len = sizeOfMyStruct
-	x.Cap = sizeOfMyStruct
-	x.Data = uintptr(s)
-	return *(*[]byte)(unsafe.Pointer(&x))
-}
-
-func BytesToStruct() {
-
-}
+//func StructToBytes(structObject *any) []byte {
+//	s := unsafe.Pointer(structObject)
+//	sizeOfMyStruct := int(unsafe.Sizeof(structObject))
+//
+//	var x reflect.SliceHeader
+//	x.Len = sizeOfMyStruct
+//	x.Cap = sizeOfMyStruct
+//	x.Data = uintptr(s)
+//	return *(*[]byte)(unsafe.Pointer(&x))
+//}
+//
+//func BytesToStruct() {
+//
+//}

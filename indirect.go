@@ -9,7 +9,7 @@ package reflect_utils
 //
 //}
 
-//func VisitIndirect(value reflect.Value) reflect.Value {
+//func VisitIndirect(value reflect.ItemValue) reflect.ItemValue {
 //	if value.Kind() == reflect.Ptr || value.Kind() == reflect.Interface {
 //		return VisitIndirect(value.Elem())
 //	} else {

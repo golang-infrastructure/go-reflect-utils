@@ -1,6 +1,6 @@
 package reflect_utils
 
-//func Walk(v any, visitor func(key, value reflect.Value) bool) {
+//func Walk(v any, visitor func(key, value reflect.ItemValue) bool) {
 //	reflectValue := reflect.ValueOf(v)
 //	reflectType := reflect.TypeOf(v)
 //	switch reflectType.Kind() {
