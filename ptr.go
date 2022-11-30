@@ -21,3 +21,5 @@ func GetUintPtr(value any) uintptr {
 	ptr, _ := GetUintPtrE(value)
 	return ptr
 }
+
+
